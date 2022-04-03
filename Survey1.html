@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'>. 
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Home</title>
+    <style> 
+        body {
+          #background-image: url('FlamingoGroot.jpeg');
+          background-color: #78C1C2;
+          color: #E68AA9;
+        }
+      .h2 = {color: #6891C3}
+      
+      .top {
+         text-align: center;
+      }
+
+    </style>
+</head>
+<body>
+    <p>
+      <script type="text/javascript">
+      function OnSubmitForm()
+      {
+        if(document.survey.fav_area[0].checked == true)
+        {
+          document.survey.action ="Response1.html";
+        }
+        else if(document.survey.fav_area[1].checked == true)
+        {
+          document.survey.action ="Response2.html";
+        }
+        else if(document.survey.fav_area[2].checked == true)
+        {
+          document.survey.action ="Response3.html";
+        }
+        else if(document.survey.fav_area[3].checked == true)
+        {
+          document.survey.action ="Response4.html";
+        }
+        return true;
+      }
+      </script>
+      <h1 style = "color:#4D94D0" class = "top">Survey</h1>
+      <form name = "survey" onsubmit = "return OnSubmitForm();">
+          <h2>Choose all languages you already known?</h2>
+          <input type="checkbox" id="HTML, CSS, JAVASCRIPT" value="HTML, CSS, JAVASCRIPT" value="HTML">
+          <label for="html">HTML</label><br>
+          <input type="checkbox" id="C/C++" name="fav_language" value="C/C++">
+          <label for="css">CSS</label><br>
+          <input type="checkbox" id="Python" name="fav_language" value="Python">
+          <label for="javascript">JavaScript</label>
+
+          <h2>Choose the area you interested in?</h2>
+          <input type="radio" id="Data Science" name="fav_area" value="Data Science" checked>
+          <label for="Data Science">1. Data Science</label><br>
+          <input type="radio" id="Web Development" name="fav_area" value="Web Development" checked>
+          <label for="Web Development">2. Web Development</label><br>
+          <input type="radio" id="Software" name="fav_area" value="Software" checked>
+          <label for="Software">3. Software</label><br>
+          <input type="radio" id="Undecided" name="fav_area" value="Undecided" checked>
+          <label for="Undecided">4. Undecided</label><br>
+
+          <h2>Your academic year?</h2>
+          <label for="fav_area"><i>Choose a year:</i></label>
+          <select id="year" name="yeara" size="4">
+            <option value="Freshman">Freshman</option>
+            <option value="Sophomore">Sophomore</option>
+            <option value="Junior">Junior</option>
+            <option value="Senior">Senior</option>
+          </select><br><br>
+        
+          <input type="submit" value="submit">
+      </form>
+      
+    </p>
+
+        <p>
+          <div class = "top">
+          <a href = "javascript:history.back()" > <ion-icon name="arrow-undo-outline" style="width:42px;height:42px;"></ion-icon> </a> 
+          <a href = "index.html" > <ion-icon name = "home-outline" style="width:42px;height:42px;"></ion-icon> </a> 
+          </div>
+        </p>
+        </div>
+    </div>
+</body>
+</html>
